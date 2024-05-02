@@ -27,7 +27,7 @@ To run InstaFrame, ensure you have the following prerequisites:
 
 # Installation
 **Install Visual Studio Code:** Download and install from Visual Studio Code.
-**Clone repository:** `git clone https://github.com/your-username/your-project.git`
+**Clone repository:** `git clone https://github.com/aghna-khalil/Social-App-InstaFrame-`
 **Navigate to the InstaFrame:** First Login.
 
 ## Usage/Examples
