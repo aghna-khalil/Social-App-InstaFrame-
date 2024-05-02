@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="login.css">
+    <title>login page</title>
+</head>
+<body>
+    <header>
+        <div class="logo">InstaFrame</div>
+        <nav class="navigation">
+       
+             <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Service</a>
+            <a href="#">Contact</a>
+           
+            <button class="login-btn">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <!-- =================login form================== -->
+        <span class="icon-close" syle="color: white;"><i class="fa-solid fa-xmark"></i></span>
+        <div class="form-box login" >
+            <h2>Login</h2>
+            <form action="" onsubmit="return loginUser(event);">
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="loginusername" name="loginusername" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="loginpassword" name="loginpassword" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn"  onclick="loginUser(event)">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account?<a href="#"class="register-link">Register</a></p>
+
+                </div>
+            </form>
+        </div>
+        <!-- ================regitration form=================== -->
+        <div class="form-box register" >
+            <h2>Registration</h2>
+            <form action="" onsubmit="return registerUser(event);" >
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-user"></i></span>
+                    <input type="text" id="username" name="Username" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                    <input type="email" id="email" name="Email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                    <input type="password" id="password" name="Password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions.</label> 
+                </div>
+                <a href="login.html"><button type="submit" class="btn" onclick="registerUser()">Register</button></a>
+                
+                <div class="login-register">
+                    <p>Already have an account?<a href="#"class="login-link">Login</a></p>
+
+                </div>
+            </form>
+
+        </div>
+    </div>
+ 
+    
+
+
+    <script src="login.js"></script>
+</body>
+</html>
